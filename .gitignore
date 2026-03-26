@@ -1,0 +1,44 @@
+# =============================================================================
+# ViT_part — SAM2 Macrophage Segmentation on Jetson Orin Nano
+# =============================================================================
+
+# Python virtual environment (rebuilt by setup_jetson.sh)
+sam2_env_jetson/
+sam2_env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# SAM2 cloned repo (re-cloned by setup_jetson.sh)
+segment-anything-2/
+
+# Dataset (re-downloaded by get_data.py)
+microphage-4/
+
+# Base model checkpoints (large, downloaded by setup_jetson.sh)
+checkpoints/
+
+# Inference outputs
+outputs/
+
+# pip cache
+.cache/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+
+# Training logs / temp
+/tmp/
+*.log
+
+# Trained weights — keep the best ones, ignore periodic checkpoints
+weights/tiny/checkpoint_epoch*.pt
+segment-anything-2/
