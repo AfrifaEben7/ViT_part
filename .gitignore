@@ -42,3 +42,4 @@ Thumbs.db
 # Trained weights — keep the best ones, ignore periodic checkpoints
 weights/tiny/checkpoint_epoch*.pt
 segment-anything-2/
+=1.*
